@@ -19,13 +19,13 @@ void printLinkedList (struct Node* head) {
 }
 
 void addNode (struct Node* head, struct Node* newNode) {
-    struct Node* current = head;
-    while(current->next) {
-        current = current->next;
+    struct Node current = *head;
+    while(current.next) {
+        current = *current.next;
     }
-    printf("adding new node to the node with data = %d\n", current->data);
+    printf("adding new node to the node with data = %d\n", current.data);
     printf("%p\n", newNode);
-    current->next = newNode;
+    current.next = newNode;
 
 }
 
