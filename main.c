@@ -37,8 +37,10 @@ int main() {
 
     printLinkedList(&head);
 
-    struct Node newNode = {"Hello, World!", NULL};    
+    struct Node newNode = {"Hello, World!", NULL};
+    struct Node bingNode = {"Bing", NULL};
     addNode(&head, &newNode);
+    addNode(&head, &bingNode);
     printLinkedList(&head);
     
     
