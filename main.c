@@ -9,11 +9,11 @@ void printLinkedList (struct Node* head) {
     struct Node current = *head;
     int count = 0;
     printf("START OF LIST\n");
-    printf("\tNODE: %d\t[ DATA:%-32s;\tNEXT:\t%p ]\n", count, current.data, current.next);
+    printf("\tNODE: %d\t[ DATA:%-32s; NEXT:%p ]\n", count, current.data, current.next);
     while (current.next) {
         count++;
         current = *current.next;
-        printf("\tNODE: %d\t[ DATA:%-32s;\tNEXT:\t%p ]\n", count, current.data, current.next);
+        printf("\tNODE: %d\t[ DATA:%-32s; NEXT:%p ]\n", count, current.data, current.next);
     }
     printf("END OF LIST\n");
 }
